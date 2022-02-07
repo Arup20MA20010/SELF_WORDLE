@@ -45,7 +45,7 @@ while no!=0:
             for j in range(5):
                 if(guess_word[i]==corrected_word[j]):
                     if i!=j:
-                        if j not in visited and j not in prev_visited:
+                        if j not in visited and j not in prev_visited and i not in prev_visited:
                             visited.append(j)
                             letter.append(corrected_word[j])
         if len(letter)>0:
